@@ -10,7 +10,8 @@ Module.register('MMM-AirNow', {
     defaults: {
             api_key:    '',
             zip_code:   '',
-            interval:   900000 // Every 15 mins
+            interval:   900000, // Every 15 mins
+            showLocation: false
     },
 
 
@@ -140,7 +141,9 @@ Module.register('MMM-AirNow', {
             }
 
             // Add elements to the now div
-            wrapper.appendChild(airLocation);
+            if(this.config.showLocation === true) {
+	            wrapper.appendChild(airLocation);
+            }
             wrapper.appendChild(airDetails);
         } 
         else {
