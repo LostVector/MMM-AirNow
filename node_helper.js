@@ -16,8 +16,7 @@ module.exports = NodeHelper.create({
         // Set up the local values
         this.location = '';
         this.result = null;
-        },
-
+    },
 
     getAirQualityData: function(payload) {
 
@@ -36,19 +35,18 @@ module.exports = NodeHelper.create({
             } else {
                 // In all other cases it's some other error
                 that.location = 'Error getting data';
-                }
+            }
 
             // We have the response figured out so lets fire off the notifiction
             that.sendSocketNotification('GOT-AIR-QUALITY', {'url': that.url, 'location': that.location, 'result': that.result});
-            });
-        },
-
+        });
+    },
 
     socketNotificationReceived: function(notification, payload) {
         // Check this is for us and if it is let's get the weather data
         if (notification === 'GET-AIR-QUALITY') {
             this.getAirQualityData(payload);
-            }
         }
+    }
 
-    });
+});
