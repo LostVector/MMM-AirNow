@@ -1,4 +1,18 @@
 # MMM-AirNow
+
+## LostVector fork
+
+![Air now](airquality_lostvector.png "Air now.")
+
+This fork incorporates the following changes.
+
+1. The O3 and PM2.5 metrics use subscripts for better readability.
+2. The custom css styling that is mostly inconsistent with the default MagicMirror CSS styling is removed.
+3. Table alignment has been adjusted to what I feel is better overall.
+4. Emoji icons are now displayed along with the textual description of the air quality for more visual feedback.
+
+## Original readme
+
 ![Air now](airquality.png "Air now.")
 
 This is a module for the [MagicMirror](https://github.com/MichMich/MagicMirror/tree/develop). This module shows air quality based on the US AirNow API.
