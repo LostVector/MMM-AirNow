@@ -9,7 +9,10 @@ This fork incorporates the following changes.
 1. The O3 and PM2.5 metrics use subscripts for better readability.
 2. The custom css styling that is mostly inconsistent with the default MagicMirror CSS styling is removed.
 3. Table alignment has been adjusted to what I feel is better overall.
-4. Emoji icons are now displayed along with the textual description of the air quality for more visual feedback.
+4. Emoji icons are now displayed along with the textual description of the air quality. Pictorial elements are recognized and parsed faster than text.
+5. A new showLocation boolean has been added to the config which defaults to false. 
+I expect the vast majority of users are displaying the air quality where they live and do not need to waste space displaying that location.
+In addition, it's arguably better and more space efficient to just hardcode the location text in the header.
 
 ## Original readme
 
