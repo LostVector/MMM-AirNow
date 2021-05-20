@@ -102,7 +102,7 @@ Module.register('MMM-AirNow', {
                     airRow.className = colourClass;
 
                     var airParameter = document.createElement('td');
-                    airParameter.className = 'airParameter normal';
+                    airParameter.className = 'airParameter bright';
 
 					var paramHTML = this.result[i].ParameterName;
 					if (paramHTML === "O3") {
